@@ -434,6 +434,13 @@
                                                         item.addEventListener('mouseleave', () => preview.classList.remove('on'));
                                                         item.addEventListener('mousemove', e => { preview.style.left = (e.clientX + 18) + 'px'; preview.style.top = (e.clientY - 80) + 'px'; });
                                                     });
+                                                    function openDetail(id) {
+  window.location.href = 'project-detail.html?project=' + id;
+}
+document.querySelectorAll('.proj-item').forEach((item, i) => {
+  item.style.cursor = 'pointer';
+  item.addEventListener('click', () => openDetail(i));
+});
 
                                                     // Smooth scroll
                                                     document.querySelectorAll('a[href^="#"]').forEach(a => {
