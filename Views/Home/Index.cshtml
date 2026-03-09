@@ -1,0 +1,443 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body class="bg-bg-deep text-shell font-mono">
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+
+
+    <!-- ══════════ HERO 1 — Vignette ══════════ -->
+    <section id="hero" class="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="hero-vignette"></div>
+        <div class="hero-rim"></div>
+
+        <div class="hero-corner tc">Puja Rai</div>
+        <div class="hero-corner bl">Kathmandu, NP</div>
+        <div class="hero-corner br">Available ✦</div>
+
+        <div class="relative z-10 px-6 text-center">
+            <div class="hero-subtitle-row">
+                <span>A <span class="accent">Fullstack</span> Developer</span>
+                <span>Version <span class="accent">2025</span></span>
+            </div>
+            <div class="hero-big-title">
+                <span>P</span>
+                <div class="hero-star-wrap">
+                    <div class="hero-star">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 0 L53 47 L100 50 L53 53 L50 100 L47 53 L0 50 L47 47 Z" fill="white" />
+                        </svg>
+                    </div>
+                </div>
+                <span>RTFOLI</span>
+                <span style="-webkit-text-stroke:2px #BC8F8F;color:transparent;">O</span>
+            </div>
+            <div class="hero-divider"></div>
+            <div class="hero-services">
+                <p>React &nbsp;·&nbsp; Node.js &nbsp;·&nbsp; MongoDB &nbsp;·&nbsp; Express</p>
+                <p>.NET Core &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; REST APIs &nbsp;·&nbsp; SQL</p>
+            </div>
+            <div class="flex items-center justify-center gap-6 mt-8"
+                 style="opacity:0;animation:fadeUp .9s ease 1.1s forwards">
+                <a href="#works" class="btn-p"><span>View My Work</span></a>
+                <a href="#contact" class="btn-g">Let's Connect <span class="arrow">→</span></a>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            Scroll to explore
+        </div>
+    </section>
+
+    <!-- ══════════ HERO 2 — Split + Photo ══════════ -->
+    <section id="hero2" class="bg-bg-deep ">
+        <!-- Left -->
+        <div class="h2-left flex flex-col justify-center px-12 md:px-16 py-28 relative">
+            <p class="flex items-center gap-3 font-mono text-[.62rem] tracking-widest uppercase text-rosy mb-7">
+                <span class="deco-dot"></span> Available for freelance work
+            </p>
+            <h1 class="font-display font-light leading-none text-shell mb-8" style="font-size:clamp(3rem,6.5vw,6.8rem)">
+                Full<span class="italic text-rosy">Stack</span><br>
+                <span class="h2-outline">Developer</span>
+            </h1>
+            <p
+                class="font-mono text-[.7rem] leading-loose text-shell-muted max-w-sm border-l-2 border-rosy/25 pl-5 mb-10">
+                Crafting seamless digital experiences from database to interface — with precision, performance, and
+                purpose. Specializing in MERN Stack, .NET, and modern JavaScript ecosystems.
+            </p>
+            <div class="flex items-center gap-5">
+                <a href="#works" class="btn-p"><span>View My Work</span></a>
+                <a href="#contact" class="btn-g">Let's Connect <span class="arrow">→</span></a>
+            </div>
+            <span
+            class="absolute left-10 bottom-5 font-bebas leading-none pointer-events-none select-none hidden md:block"
+            style="font-size:9rem;-webkit-text-stroke:1px rgba(234,224,200,.05);color:transparent;">02</span>
+        </div>
+
+        <!-- Right: Photo -->
+        <div class="h2-right relative flex items-center justify-center">
+            <div class="h2-ring r1"></div>
+            <div class="h2-ring r2"></div>
+            <div class="h2-photo-frame relative z-10"
+                 style="width:clamp(230px,32vw,420px);height:clamp(310px,50vh,580px);">
+                <img src="/img/heroImg.jpeg" alt="Your photo" id="heroPhoto">
+                <div class="h2-overlay"></div>
+                <div class="bracket tl"></div>
+                <div class="bracket tr"></div>
+                <div class="bracket bl"></div>
+                <div class="bracket br"></div>
+            </div>
+            <p class="absolute font-mono text-[.55rem] tracking-widest uppercase text-shell-muted z-10"
+                   style="bottom:calc(50% - clamp(155px,25vh,290px) - 1.8rem);left:50%;transform:translateX(-50%);white-space:nowrap">
+                Fullstack Dev ✦ 2025
+            </p>
+        </div>
+    </section>
+
+    <!-- ══════════ MARQUEE ══════════ -->
+    <div class="overflow-hidden py-5 border-t border-b border-rosy/30 bg-rosy">
+        <div class="marquee-inner">
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">React</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">Node.js</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">MongoDB</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">Express</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">.NET Core</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">TypeScript</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">REST APIs</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">PostgreSQL</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">React</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">Node.js</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">MongoDB</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">Express</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">.NET Core</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">TypeScript</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">REST APIs</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+            <span class="inline-block font-bebas text-lg tracking-[.4em] text-shell/40 px-7">PostgreSQL</span><span
+            class="inline-block font-bebas text-shell px-3">✦</span>
+        </div>
+    </div>
+
+    <!-- ══════════ ABOUT ══════════ -->
+    <section id="about" class="bg-shell px-8 md:px-16 py-32">
+        <p class="section-label reveal">About Me</p>
+
+        <div class="about-grid grid grid-cols-1 md:grid-cols-2 gap-16 mt-10">
+            <div>
+                <h2 class="font-display font-light leading-tight text-bg-deep reveal"
+                    style="font-size:clamp(2rem,4.5vw,4rem)">
+                    I build things<br>that <em class="text-rosy">live</em> on the<br>internet
+                </h2>
+                <div class="flex gap-10 mt-10 pt-8 border-t border-rosy/20 reveal d2">
+                    <div>
+                        <div class="font-bebas text-5xl text-bg-deep leading-none" data-count="3">0</div>
+                        <div class="font-mono text-[.58rem] tracking-widest uppercase text-rosy-mid mt-1">Years Exp
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-bebas text-5xl text-bg-deep leading-none" data-count="20">0</div>
+                        <div class="font-mono text-[.58rem] tracking-widest uppercase text-rosy-mid mt-1">Projects</div>
+                    </div>
+                    <div>
+                        <div class="font-bebas text-5xl text-bg-deep leading-none" data-count="8">0</div>
+                        <div class="font-mono text-[.58rem] tracking-widest uppercase text-rosy-mid mt-1">Clients</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p class="font-mono text-[.7rem] leading-loose text-rosy-mid mb-5 reveal">
+                    I'm a passionate fullstack developer who thrives at the intersection of clean code and elegant
+                    design. My workflow spans the entire stack — from architecting RESTful APIs and database schemas to
+                    crafting pixel-perfect React interfaces.
+                </p>
+                <p class="font-mono text-[.7rem] leading-loose text-rosy-mid mb-8 reveal d1">
+                    Whether it's a real-time web app with the MERN stack or an enterprise solution with .NET, I bring
+                    the same level of craft and attention to detail.
+                </p>
+                <div class="corner-card bg-rosy/10 border border-rosy/30 p-7 reveal d2">
+                    <div class="code-block">
+                        <div><span class="ck">const</span> <span class="cs">developer</span> = {</div>
+                        <div>&nbsp;&nbsp;<span class="ck">name</span>: <span class="cs">"PUJA RAI"</span>,</div>
+                        <div>&nbsp;&nbsp;<span class="ck">role</span>: <span class="cs">"Fullstack Dev"</span>,</div>
+                        <div>&nbsp;&nbsp;<span class="ck">stack</span>: [<span class="cs">"MERN"</span>, <span
+                            class="cs">".NET"</span>, <span class="cs">"JS"</span>],</div>
+                            <div>&nbsp;&nbsp;<span class="ck">available</span>: <span class="cn">true</span></div>
+                            <div>}</div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-5">
+                            <span
+                            class="font-mono text-[.58rem] tracking-widest uppercase text-rosy-mid border border-rosy/40 px-3 py-1 hover:border-rosy-mid hover:text-bg-deep transition-colors duration-300 cursor-default">React</span>
+                            <span
+                            class="font-mono text-[.58rem] tracking-widest uppercase text-rosy-mid border border-rosy/40 px-3 py-1 hover:border-rosy-mid hover:text-bg-deep transition-colors duration-300 cursor-default">Node.js</span>
+                            <span
+                            class="font-mono text-[.58rem] tracking-widest uppercase text-rosy-mid border border-rosy/40 px-3 py-1 hover:border-rosy-mid hover:text-bg-deep transition-colors duration-300 cursor-default">MongoDB</span>
+                            <span
+                            class="font-mono text-[.58rem] tracking-widest uppercase text-rosy-mid border border-rosy/40 px-3 py-1 hover:border-rosy-mid hover:text-bg-deep transition-colors duration-300 cursor-default">Express</span>
+                            <span
+                            class="font-mono text-[.58rem] tracking-widest uppercase text-rosy-mid border border-rosy/40 px-3 py-1 hover:border-rosy-mid hover:text-bg-deep transition-colors duration-300 cursor-default">.NET</span>
+                            <span
+                            class="font-mono text-[.58rem] tracking-widest uppercase text-rosy-mid border border-rosy/40 px-3 py-1 hover:border-rosy-mid hover:text-bg-deep transition-colors duration-300 cursor-default">TypeScript</span>
+                            <span
+                            class="font-mono text-[.58rem] tracking-widest uppercase text-rosy-mid border border-rosy/40 px-3 py-1 hover:border-rosy-mid hover:text-bg-deep transition-colors duration-300 cursor-default">C#</span>
+                            <span
+                            class="font-mono text-[.58rem] tracking-widest uppercase text-rosy-mid border border-rosy/40 px-3 py-1 hover:border-rosy-mid hover:text-bg-deep transition-colors duration-300 cursor-default">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill cards -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-14 reveal">
+                <div
+                    class="border border-rosy/18 bg-rosy/12 p-5 hover:border-rosy-mid border-rosy/25 group transition-colors duration-300">
+                    <div
+                        class="font-mono text-[.62rem] tracking-widest uppercase text-bg-deep mb-1.5 group-hover:text-rosy-mid transition-colors duration-300">
+                        Frontend</div>
+                        <div class="font-mono text-[.58rem] text-rosy-mid">React · Next.js · Tailwind</div>
+                    </div>
+                    <div
+                        class="border border-rosy/18 bg-rosy/12 p-5 hover:border-rosy-mid border-rosy/25 group transition-colors duration-300">
+                        <div
+                            class="font-mono text-[.62rem] tracking-widest uppercase text-bg-deep mb-1.5 group-hover:text-rosy-mid transition-colors duration-300">
+                            Backend</div>
+                            <div class="font-mono text-[.58rem] text-rosy-mid">Node.js · Express · REST</div>
+                        </div>
+                        <div
+                            class="border border-rosy/18 bg-rosy/12 p-5 hover:border-rosy-mid border-rosy/25 group transition-colors duration-300">
+                            <div
+                                class="font-mono text-[.62rem] tracking-widest uppercase text-bg-deep mb-1.5 group-hover:text-rosy-mid transition-colors duration-300">
+                                Database</div>
+                                <div class="font-mono text-[.58rem] text-rosy-mid">MongoDB · PostgreSQL · SQL</div>
+                            </div>
+                            <div
+                                class="border border-rosy/18 bg-rosy/12 p-5 hover:border-rosy-mid border-rosy/25 group transition-colors duration-300">
+                                <div
+                                    class="font-mono text-[.62rem] tracking-widest uppercase text-bg-deep mb-1.5 group-hover:text-rosy-mid transition-colors duration-300">
+                                    .NET Stack</div>
+                                    <div class="font-mono text-[.58rem] text-rosy-mid">C# · ASP.NET · EF Core</div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- ══════════ WORKS ══════════ -->
+                        <section id="works" class="bg-rosy px-8 md:px-16 py-32">
+                            <div class="flex justify-between items-end mb-14 reveal">
+                                <div>
+                                    <p class="section-label">Selected Work</p>
+                                    <h2 class="font-display font-light text-shell mt-2" style="font-size:clamp(2rem,4.5vw,4rem)">
+                                        My Projects
+                                    </h2>
+                                </div>
+                                <span class="font-bebas leading-none"
+                                      style="font-size:4rem;-webkit-text-stroke:1px rgba(188,143,143,.32);color:transparent;">04</span>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <div class="proj-item reveal grid items-center gap-4 md:gap-6 py-6 border-b border-rosy/15"
+                                     style="grid-template-columns:60px 1fr auto auto">
+                                    <span class="font-bebas text-base text-shell/50">01</span>
+                                    <span
+                                        class="font-display font-light text-shell/70 hover:text-shell hover:tracking-wider transition-all duration-300 text-2xl md:text-[1.65rem]">ShopNest
+                                        E-Commerce</span>
+                                        <div class="proj-tags flex gap-2">
+                                            <span
+                                            class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-2 py-0.5">MERN</span>
+                                            <span
+                                            class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-2 py-0.5">Redux</span>
+                                            <span
+                                            class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-2 py-0.5">Stripe</span>
+                                        </div>
+                                        <a href="#"
+                                           class="w-9 h-9 border border-rosy/22 flex items-center justify-center text-shell-muted hover:bg-shell hover:border-shell hover:text-rosy-mid transition-all duration-300 text-sm no-underline">↗</a>
+                                    </div>
+
+                                    <div class="proj-item reveal d1 grid items-center gap-4 md:gap-6 py-6 border-b border-rosy/15"
+                                         style="grid-template-columns:60px 1fr auto auto">
+                                        <span class="font-bebas text-base text-shell/50">02</span>
+                                        <span
+                                            class="font-display font-light text-shell/70 hover:text-shell hover:tracking-wider transition-all duration-300 text-2xl md:text-[1.65rem]">TaskFlow
+                                            Dashboard</span>
+                                            <div class="proj-tags flex gap-2">
+                                                <span
+                                                class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-2 py-0.5">.NET</span>
+                                                <span
+                                                class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-2 py-0.5">React</span>
+                                                <span
+                                                class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-2 py-0.5">SignalR</span>
+                                            </div>
+                                            <a href="#"
+                                               class="w-9 h-9 border border-rosy/22 flex items-center justify-center text-shell-muted hover:bg-shell hover:border-shell hover:text-rosy-mid transition-all duration-300 text-sm no-underline">↗</a>
+                                        </div>
+
+                                        <div class="proj-item reveal d2 grid items-center gap-4 md:gap-6 py-6 border-b border-rosy/15"
+                                             style="grid-template-columns:60px 1fr auto auto">
+                                            <span class="font-bebas text-base text-shell/50">03</span>
+                                            <span
+                                                class="font-display font-light text-shell/70 hover:text-shell hover:tracking-wider transition-all duration-300 text-2xl md:text-[1.65rem]">ConnectHub
+                                                Social</span>
+                                                <div class="proj-tags flex gap-2">
+                                                    <span
+                                                    class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-2 py-0.5">MERN</span>
+                                                    <span
+                                                    class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-2 py-0.5">Socket.IO</span>
+                                                    <span
+                                                    class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-2 py-0.5">JWT</span>
+                                                </div>
+                                                <a href="#"
+                                                   class="w-9 h-9 border border-rosy/22 flex items-center justify-center text-shell-muted hover:bg-shell hover:border-shell hover:text-rosy-mid transition-all duration-300 text-sm no-underline">↗</a>
+                                            </div>
+
+                                            <div class="proj-item reveal d3 grid items-center gap-4 md:gap-6 py-6 border-b border-rosy/15"
+                                                 style="grid-template-columns:60px 1fr auto auto">
+                                                <span class="font-bebas text-base text-shell/50">04</span>
+                                                <span
+                                                    class="font-display font-light text-shell/70 hover:text-shell hover:tracking-wider transition-all duration-300 text-2xl md:text-[1.65rem]">API
+                                                    Gateway Service</span>
+                                                    <div class="proj-tags flex gap-2">
+                                                        <span
+                                                        class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-2 py-0.5">Node.js</span>
+                                                        <span
+                                                        class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-2 py-0.5">Docker</span>
+                                                        <span
+                                                        class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-2 py-0.5">Redis</span>
+                                                    </div>
+                                                    <a href="#"
+                                                       class="w-9 h-9 border border-rosy/22 flex items-center justify-center text-shell-muted hover:bg-shell hover:border-shell hover:text-rosy-mid transition-all duration-300 text-sm no-underline">↗</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Featured -->
+                                            <div class="featured-card reveal mt-14 border border-rosy/18 p-8 md:p-12 overflow-hidden"
+                                                 style="background:linear-gradient(135deg,rgba(188,143,143,.1),rgba(45,27,27,.5))">
+                                                <div class="absolute bottom-0 right-0 font-bebas leading-none pointer-events-none"
+                                                     style="font-size:7rem;-webkit-text-stroke:1px rgba(188,143,143,.06);color:transparent;">FEATURE</div>
+                                                <p class="section-label mb-4">Featured Project</p>
+                                                <h3 class="font-display font-light text-shell mb-4" style="font-size:2.2rem">FinTrack Analytics Platform
+                                                </h3>
+                                                <p class="font-mono text-[.7rem] leading-loose text-shell max-w-xl mb-7">
+                                                    A comprehensive financial analytics dashboard built with .NET Core backend, React frontend, and
+                                                    PostgreSQL database. Features real-time data visualization, multi-tenant architecture, and automated
+                                                    reporting — serving 500+ daily active users.
+                                                </p>
+                                                <div class="flex flex-wrap gap-2 mb-7">
+                                                    <span
+                                                        class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-3 py-1">.NET
+                                                        Core</span>
+                                                        <span
+                                                        class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-3 py-1">React</span>
+                                                        <span
+                                                        class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-3 py-1">PostgreSQL</span>
+                                                        <span
+                                                        class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-3 py-1">Azure</span>
+                                                        <span
+                                                        class="font-mono text-[.55rem] tracking-widest uppercase text-shell/60 border border-shell/30 px-3 py-1">Chart.js</span>
+                                                    </div>
+                                                    <div class="flex items-center gap-5">
+                                                        <a href="#" class="btn-p"><span>View Case Study</span></a>
+                                                        <a href="#" class="btn-g">GitHub <span class="arrow">→</span></a>
+                                                    </div>
+                                                </div>
+                                            </section>
+
+                                            <!-- ══════════ CONTACT ══════════ -->
+                                            <section id="contact"
+                                                     class="relative bg-shell px-8 md:px-16 py-32 text-center border-t border-rosy/20 overflow-hidden">
+                                                <div class="absolute inset-0 pointer-events-none"
+                                                     style="background:radial-gradient(ellipse at center,rgba(188,143,143,.15) 0%,transparent 60%)"></div>
+                                                <p class="section-label reveal justify-center">Get In Touch</p>
+                                                <h2 class="font-display font-light text-bg-deep leading-none mt-4 mb-3 reveal"
+                                                    style="font-size:clamp(2.5rem,8vw,6rem)">
+                                                    Let's build<br><span class="italic text-rosy-mid">something great</span>
+                                                </h2>
+                                                <a href="mailto:hello@yourname.dev"
+                                                       class="font-display text-rosy-mid tracking-widest no-underline hover:text-bg-deep transition-colors duration-300 block mb-12 reveal"
+                                                       style="font-size:clamp(1.2rem,3.5vw,2.4rem)">
+                                                    rpuja7700@gmail.com
+                                                </a>
+                                                <div class="flex justify-center flex-wrap gap-8 reveal">
+                                                    <a href="#"
+                                                       class="font-mono text-[.6rem] tracking-widest uppercase text-rosy-mid hover:text-bg-deep border-b border-transparent hover:border-rosy-mid pb-0.5 transition-all duration-300 no-underline">GitHub</a>
+                                                    <a href="#"
+                                                       class="font-mono text-[.6rem] tracking-widest uppercase text-rosy-mid hover:text-bg-deep border-b border-transparent hover:border-rosy-mid pb-0.5 transition-all duration-300 no-underline">LinkedIn</a>
+                                                    <a href="#"
+                                                       class="font-mono text-[.6rem] tracking-widest uppercase text-rosy-mid hover:text-bg-deep border-b border-transparent hover:border-rosy-mid pb-0.5 transition-all duration-300 no-underline">Twitter</a>
+                                                    <a href="#"
+                                                       class="font-mono text-[.6rem] tracking-widest uppercase text-rosy-mid hover:text-bg-deep border-b border-transparent hover:border-rosy-mid pb-0.5 transition-all duration-300 no-underline">Resume</a>
+                                                </div>
+                                            </section>
+
+
+
+                                            <!-- Hover preview -->
+                                            <div class="proj-preview" id="projPreview">
+                                                <div class="prev-inner" id="prevInner"></div>
+                                            </div>
+
+                                            <script>
+                                                    // Cursor
+                                                    const cur = document.getElementById('cursor');
+                                                    const ring = document.getElementById('cursorRing');
+                                                    let mx = 0, my = 0, rx = 0, ry = 0;
+                                                    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cur.style.left = mx - 5 + 'px'; cur.style.top = my - 5 + 'px'; });
+                                                    (function loop() { rx += (mx - rx - 19) * .12; ry += (my - ry - 19) * .12; ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; requestAnimationFrame(loop); })();
+                                                    document.querySelectorAll('a,button,.proj-item,div[class*="hover:border-rosy"],div[class*="group"]').forEach(el => {
+                                                        el.addEventListener('mouseenter', () => { cur.classList.add('expand'); ring.classList.add('expand'); });
+                                                        el.addEventListener('mouseleave', () => { cur.classList.remove('expand'); ring.classList.remove('expand'); });
+                                                    });
+
+                                                    // Nav scroll
+                                                    const nav = document.getElementById('navbar');
+                                                    window.addEventListener('scroll', () => {
+                                                        if (window.scrollY > 50) { nav.style.background = 'rgba(45,27,27,0.96)'; nav.style.backdropFilter = 'blur(14px)'; nav.style.borderBottom = '1px solid rgba(188,143,143,.2)'; }
+                                                        else { nav.style.background = ''; nav.style.backdropFilter = ''; nav.style.borderBottom = ''; }
+                                                    });
+
+                                                    // Reveal
+                                                    const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add('visible')), { threshold: .1 });
+                                                    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+                                                    // Counters
+                                                    const co = new IntersectionObserver(es => es.forEach(e => {
+                                                        if (!e.isIntersecting) return;
+                                                        const el = e.target, t = +el.dataset.count; let c = 0;
+                                                        const iv = setInterval(() => { c += t / 50; if (c >= t) { c = t; clearInterval(iv); } el.textContent = Math.floor(c) + '+'; }, 30);
+                                                        co.unobserve(el);
+                                                    }), { threshold: .5 });
+                                                    document.querySelectorAll('[data-count]').forEach(el => co.observe(el));
+
+                                                    // Project hover preview
+                                                    const preview = document.getElementById('projPreview');
+                                                    const prevInner = document.getElementById('prevInner');
+                                                    document.querySelectorAll('.proj-item').forEach((item, i) => {
+                                                        const title = item.querySelector('.font-display');
+                                                        item.addEventListener('mouseenter', () => { if (title) { prevInner.textContent = title.textContent; prevInner.style.background = '#BC8F8F'; prevInner.style.color = '#FFF5EE'; preview.classList.add('on'); } });
+                                                        item.addEventListener('mouseleave', () => preview.classList.remove('on'));
+                                                        item.addEventListener('mousemove', e => { preview.style.left = (e.clientX + 18) + 'px'; preview.style.top = (e.clientY - 80) + 'px'; });
+                                                    });
+
+                                                    // Smooth scroll
+                                                    document.querySelectorAll('a[href^="#"]').forEach(a => {
+                                                        a.addEventListener('click', e => { const t = document.querySelector(a.getAttribute('href')); if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); } });
+                                                    });
+                                            </script>
+                                        </body>
